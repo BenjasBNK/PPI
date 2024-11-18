@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="it" type="text">
+    <button>Copiar</button>
+    <div class="textos"></div>
+    <script>
+        let inputTxt= document.querySelector("#it")
+        let textos=document.querySelector(".textos")
+        let button=document.querySelector("button")
+
+        function copiar(){
+            let str = inputTxt.value;
+            
+            //texto.innerHTML+="<p>"+str+"</p>"; tosco
+
+            let meup =document.createElement("p") 
+            meup.innerHTML=str;
+            textos.appendChild(meup)
+
+
+
+        }
+        button.addEventListener("click", copiar)
+        
+
+    </script>
+</body>
+</html>

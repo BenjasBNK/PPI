@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        /* Estilos para centralizar o botão */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .counter {
+            font-size: 40px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Cliques</h1>
+        <button id="contador">0</button>
+    </div>
+
+    <script>
+        // Função para incrementar o contador ao clicar no botão
+        let contador = 0;
+        const btnClique = document.getElementById('btnClique');
+        const contadorElement = document.getElementById('contador');
+
+        btnClique.addEventListener('click', function() {
+            contador++;
+            contadorElement.textContent = contador;
+        });
+    </script>
+</body>
+</html>
